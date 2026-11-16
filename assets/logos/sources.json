@@ -1,0 +1,38 @@
+[
+  {
+    "name": "HubSpot",
+    "file": "hubspot.svg",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/hubspot.svg",
+    "downloaded": true
+  },
+  {
+    "name": "Zoho",
+    "file": "zoho.svg",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/zoho.svg",
+    "downloaded": true
+  },
+  {
+    "name": "Zendesk",
+    "file": "zendesk.svg",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/zendesk.svg",
+    "downloaded": true
+  },
+  {
+    "name": "Zapier",
+    "file": "zapier.svg",
+    "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/zapier.svg",
+    "downloaded": true
+  },
+  {
+    "name": "Salesforce",
+    "file": "salesforce.png",
+    "url": "https://img.icons8.com/color/96/salesforce.png",
+    "downloaded": true
+  },
+  {
+    "name": "Slack",
+    "file": "slack-new.png",
+    "url": "https://img.icons8.com/color/96/slack-new.png",
+    "downloaded": true
+  }
+]

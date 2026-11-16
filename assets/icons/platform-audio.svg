@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 48">
+<defs><linearGradient id="card" x2="1" y2="1"><stop stop-color="#65c7c5"/><stop offset="1" stop-color="#0d6877"/></linearGradient></defs>
+<rect x="6" y="8" width="52" height="32" rx="6" fill="#65c7c5" opacity=".4" transform="rotate(-9 32 24)"/>
+<rect x="6" y="8" width="52" height="32" rx="6" fill="url(#card)"/>
+<path d="M43 17h8m-8 4h5M43 31h8" stroke="#fff" stroke-opacity=".6" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M5 10v4m4-7v10m3-12v14m3-12v10m4-7v4" transform="translate(9 12)" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
