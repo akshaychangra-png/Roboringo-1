@@ -43,3 +43,40 @@
   }, { threshold: .3 });
   cards.forEach(card => observer.observe(card));
 })();
+
+(() => {
+  document.querySelectorAll('.pa-flip').forEach(card => {
+    card.addEventListener('click', () => {
+      const flipped = card.classList.toggle('is-flipped');
+      card.setAttribute('aria-pressed', String(flipped));
+    });
+    card.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        card.classList.remove('is-flipped');
+        card.setAttribute('aria-pressed', 'false');
+      }
+    });
+  });
+})();
+
+(() => {
+  const journey = document.querySelector('.pa-hero-journey');
+  if (!journey || !Element.prototype.animate) return;
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const animations = [];
+  const observer = new IntersectionObserver(([entry]) => {
+    if (!entry.isIntersecting) return;
+    observer.disconnect();
+    if (reduced.matches) return;
+    journey.querySelectorAll('.pa-journey-stop').forEach((node, index) => {
+      animations.push(node.animate([
+        { opacity: 0, translate: '0 16px', scale: '.96' },
+        { opacity: 1, translate: '0 0', scale: '1' },
+      ], { duration: 1600, delay: index * 350, easing: 'ease-in-out', fill: 'backwards' }));
+    });
+  }, { threshold: .3 });
+  observer.observe(journey);
+  reduced.addEventListener('change', () => {
+    if (reduced.matches) animations.forEach(animation => animation.cancel());
+  });
+})();
