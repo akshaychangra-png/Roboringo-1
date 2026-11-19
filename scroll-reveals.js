@@ -3,7 +3,7 @@
 
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const textSelector = 'main :is(h1,h2,h3,h4,p,li,dt,dd,summary,figcaption,label), main .primary, footer :is(h2,h3,p,a)';
-  const mediaSelector = '.industry-reels, .process-motion picture, .module-photo, .highlight-image, .highlight-mini-image, .product-page-image, .phone-walkthrough .phone-preview';
+  const mediaSelector = '.industry-reels, .process-motion picture, .module-photo, .highlight-image, .highlight-mini-image, .product-page-image, .phone-walkthrough .phone-preview, .pa-lifestyle, .pa-detail-lifestyle, .pa-explainer figure';
   const exclude = '[aria-hidden="true"], .sr, .sr-only, .hero-roll, .architecture-board, .architecture-caption, .dashboard-motion, .dashboard-metrics, .hero-media';
   const active = new Set();
   const seen = new WeakSet();
@@ -22,7 +22,7 @@
 
   function revealText(element) {
     if (element.matches(':focus-within')) return;
-    if (element.matches('summary, label, a, .primary')) {
+    if (!element.matches('h1,h2,h3,h4')) {
       play(element, [{ opacity: .55 }, { opacity: 1 }], { duration: 420, easing: ease });
       return;
     }

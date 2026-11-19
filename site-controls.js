@@ -60,19 +60,6 @@
   const root = document.documentElement;
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let lenis;
-  let pendingFrame = 0;
-
-  function updateBlur() {
-    pendingFrame = 0;
-    const remaining = root.scrollHeight - root.clientHeight - window.scrollY;
-    const opacity = Math.max(0, Math.min(window.scrollY / 140, remaining / 90, 1));
-    root.style.setProperty('--bottom-scroll-blur', opacity.toFixed(3));
-  }
-
-  function scheduleBlur() {
-    if (!pendingFrame) pendingFrame = requestAnimationFrame(updateBlur);
-  }
-
   function syncScrollLock() {
     if (!lenis) return;
     if (document.body.style.overflow === 'hidden') lenis.stop();
@@ -88,21 +75,25 @@
         autoRaf: true,
         anchors: true,
         stopInertiaOnNavigate: true,
-        lerp: 0.11,
+        lerp: 0.18,
         prevent: node => node instanceof Element && Boolean(node.closest('.overlay')),
       });
       syncScrollLock();
     }
-    scheduleBlur();
   }
 
   new MutationObserver(syncScrollLock).observe(document.body, {
     attributes: true,
     attributeFilter: ['style'],
   });
-  window.addEventListener('scroll', scheduleBlur, { passive: true });
-  window.addEventListener('resize', scheduleBlur);
-  window.addEventListener('pageshow', scheduleBlur);
   reducedMotion.addEventListener('change', updateMotion);
   updateMotion();
+})();
+
+(() => {
+  function updateGlowPlayback() {
+    document.documentElement.classList.toggle('glow-paused', document.hidden);
+  }
+  document.addEventListener('visibilitychange', updateGlowPlayback);
+  updateGlowPlayback();
 })();
