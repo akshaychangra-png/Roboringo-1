@@ -459,3 +459,114 @@ html[data-theme="dark"] .pa-detail #plans {
 @media (hover: hover) {
   .pa-detail #plans .pa-plan:hover .pa-plan-symbol { filter: brightness(0) invert(.9) sepia(.2) saturate(2); }
 }
+
+.pa-detail .pa-hero-journey {
+  --journey-node: #f8fff2;
+  margin-top: 30px;
+  border: 1px solid #b8cba9;
+  border-radius: 26px;
+  background-color: #dfe9d4;
+  background-image:
+    radial-gradient(ellipse at 80% 20%, #eff5d7b3, transparent 58%),
+    repeating-linear-gradient(115deg, transparent 0 23px, #426d3210 24px, transparent 25px 48px);
+  box-shadow: inset 0 1px 0 #ffffff80;
+}
+.pa-detail .pa-hero-journey .pa-journey-base { stroke: #699650; stroke-width: 3px; }
+.pa-detail .pa-hero-journey .pa-journey-halo { stroke: #8dae63; opacity: .15; }
+.pa-detail .pa-hero-journey .pa-journey-icon { border-color: #b9cea6; box-shadow: 0 8px 18px #315b251a; }
+.pa-detail .pa-hero-journey .pa-journey-label { background: #fafff4; border: 1px solid #b9cea6; color: #173e30; box-shadow: none; }
+html[data-theme="dark"] .pa-detail .pa-hero-journey {
+  --journey-node: #2a4530;
+  background-color: #1d3526;
+  background-image:
+    radial-gradient(ellipse at 80% 20%, #56774030, transparent 58%),
+    repeating-linear-gradient(115deg, transparent 0 23px, #cce5ae0b 24px, transparent 25px 48px);
+  border-color: #47623d;
+  box-shadow: inset 0 1px 0 #ffffff08;
+}
+html[data-theme="dark"] .pa-detail .pa-hero-journey .pa-journey-label { color: #f1f8e9; background: #2a4530; border-color: #56774b; }
+html[data-theme="dark"] .pa-detail .pa-hero-journey .pa-journey-icon { color: #d4edbd; border-color: #56774b; }
+
+/* The return link and introduction share one continuous canvas. */
+main.section.pa-detail { padding-top: 0; }
+.pa-detail .pa-detail-hero {
+  --pa-ink: #173e30;
+  --pa-muted: #435d50;
+  --pa-surface: #f2f6ec;
+  --pa-line: #ccd9c6;
+  --pa-page: #fff;
+  color-scheme: light;
+  color: var(--pa-ink);
+  margin-inline: calc(-1 * var(--pa-page-gutter));
+  padding: clamp(36px, 5vw, 72px) var(--pa-page-gutter);
+  background: radial-gradient(ellipse at 83% 64%, #dce8ce 0, transparent 60%), #f7f6ef;
+}
+html[data-theme="dark"] .pa-detail .pa-detail-hero {
+  --pa-ink: inherit;
+  --pa-muted: inherit;
+  --pa-surface: inherit;
+  --pa-line: inherit;
+  --pa-page: inherit;
+  color-scheme: dark;
+  background: radial-gradient(ellipse at 83% 64%, #29432e 0, transparent 60%), #192f23;
+}
+.pa-detail-hero #pa-title { color: var(--pa-ink); }
+.pa-detail-hero .pa-back { color: var(--pa-muted); margin-bottom: 24px; }
+.pa-detail-hero .pa-actions a:not(.primary) { color: var(--pa-ink); }
+.pa-detail .pa-detail-hero > div:first-child > p {
+  color: var(--pa-muted);
+  max-width: 45ch;
+  line-height: 1.55;
+}
+.pa-detail .pa-detail-hero .pa-hero-journey,
+html[data-theme="dark"] .pa-detail .pa-detail-hero .pa-hero-journey {
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+.pa-detail .pa-detail-hero + .pa-feature-band { margin-top: 0; }
+@media (max-width: 600px) {
+  .pa-detail .pa-detail-hero { gap: 18px; }
+
+}
+.pa-hint-mobile { display: none; }
+@media (max-width: 800px) {
+  .pa-collage-section .pa-collage {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: none;
+    grid-auto-columns: min(82vw, 320px);
+    grid-template-rows: auto;
+    gap: 16px;
+    aspect-ratio: auto;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 0;
+    padding: 4px 4px 15px;
+    scrollbar-width: thin;
+    scrollbar-color: #829d77 transparent;
+  }
+  .pa-collage .pa-flip {
+    grid-area: auto;
+    width: 100%;
+    min-height: 375px;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+  }
+  .pa-collage .pa-flip-inner { display: grid; height: 100%; min-height: 375px; }
+  .pa-collage .pa-flip-front { position: absolute; inset: 0; }
+  .pa-collage .pa-flip-back {
+    position: relative;
+    inset: auto;
+    min-height: 375px;
+    height: 100%;
+    padding: 28px 24px;
+  }
+  .pa-collage .pa-flip-back > strong { font-size: 24px; line-height: 1.15; overflow-wrap: anywhere; }
+  .pa-collage .pa-flip-description { font-size: 16px; line-height: 1.5; overflow-wrap: anywhere; }
+  .pa-collage .pa-flip-icon { flex-shrink: 0; }
+  .pa-hint-desktop { display: none; }
+  .pa-hint-mobile { display: inline; }
+}
