@@ -17,76 +17,30 @@ if (articleBody) {
   const content = articleBody.querySelector('.article-body-content');
   const headings = [...(content?.querySelectorAll('h2') || [])];
   if (headings.length) {
-    const layout = document.createElement('div');
-    layout.className = 'article-reading-layout';
-    articleBody.before(layout);
-    layout.append(articleBody);
-    const sidebar = document.createElement('aside');
-    sidebar.className = 'article-highlights';
-    sidebar.setAttribute('aria-label', 'Article highlights');
-    const title = document.createElement('h2');
-    title.textContent = 'In this article';
-    const navigation = document.createElement('nav');
-    navigation.setAttribute('aria-label', 'Jump to a section');
-    headings.forEach((heading, index) => {
-      if (!heading.id) heading.id = `article-section-${index + 1}`;
-      const link = document.createElement('a');
-      const sectionLabel = document.createElement('span');
-      sectionLabel.textContent = heading.textContent.trim();
-      link.title = sectionLabel.textContent;
-      link.append(sectionLabel);
-      link.href = location.pathname + '#' + heading.id;
-      link.addEventListener('click', (event) => {
+    const sidebar = document.querySelector('.article-highlights');
+    const navigation = sidebar.querySelector('nav');
+    const links = [...navigation.querySelectorAll('a')];
+    links.forEach((link, index) => {
+      link.addEventListener('click', event => {
         event.preventDefault();
         event.stopPropagation();
-        const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
         const headerHeight = document.querySelector('header').getBoundingClientRect().height;
-        const top = window.scrollY + heading.getBoundingClientRect().top - headerHeight - 24;
-        links.forEach(item => item.removeAttribute('aria-current'));
-        link.setAttribute('aria-current', 'location');
+        const top = window.scrollY + headings[index].getBoundingClientRect().top - headerHeight - 24;
         window.dispatchEvent(new CustomEvent('article-section-scroll', {
-          detail: { top, reducedMotion }
+          detail: { top, reducedMotion: matchMedia('(prefers-reduced-motion: reduce)').matches }
         }));
       });
-      navigation.append(link);
     });
-    const explore = document.createElement('a');
-    explore.className = 'article-explore primary';
-    explore.href = 'https://calendly.com/amit-mds';
-    explore.target = '_blank';
-    explore.rel = 'noopener';
-    explore.textContent = 'Book a Demo';
-    const calendar = document.createElement('img');
-    calendar.src = '/assets/icons/phone.png';
-    calendar.alt = '';
-    calendar.width = 22;
-    calendar.height = 22;
-    explore.prepend(calendar);
-    sidebar.append(explore, title, navigation);
-    layout.append(sidebar);
-    const banner = articleBody.querySelector('.article-cta');
-    if (banner) layout.after(banner);
-
-    const links = [...navigation.querySelectorAll('a')];
-    const sectionControls = document.createElement('div');
-    sectionControls.className = 'article-section-controls';
+    const [back, forward] = sidebar.querySelectorAll('.article-section-controls button');
     let sectionStart = 0;
-    const back = document.createElement('button');
-    back.type = 'button';
-    back.textContent = 'Previous';
-    const forward = document.createElement('button');
-    forward.type = 'button';
-    forward.textContent = 'Next';
     function showSections(start) {
       sectionStart = Math.max(0, Math.min(start, Math.max(0, links.length - 3)));
       links.forEach((link, index) => { link.hidden = index < sectionStart || index >= sectionStart + 3; });
-      back.disabled = sectionStart === 0;
-      forward.disabled = sectionStart + 3 >= links.length;
+      if (back) back.disabled = sectionStart === 0;
+      if (forward) forward.disabled = sectionStart + 3 >= links.length;
     }
-    back.addEventListener('click', () => showSections(sectionStart - 3));
-    forward.addEventListener('click', () => showSections(sectionStart + 3));
-    sectionControls.append(back, forward);
-    if (links.length > 3) sidebar.append(sectionControls);
+    back?.addEventListener('click', () => showSections(sectionStart - 3));
+    forward?.addEventListener('click', () => showSections(sectionStart + 3));
     showSections(0);
     let lastActiveIndex = -1;
     let scheduled = false;
