@@ -534,3 +534,13 @@ html[data-theme="dark"] .featured-controls img { filter: brightness(0) invert(.8
 .featured-controls button:focus-visible { outline: 2px solid #648b47; outline-offset: 3px; }
 .featured-controls button:disabled { background: var(--sage); box-shadow: none; }
 html[data-theme="dark"] .featured-controls button:last-child:not(:disabled) img { filter: none; }
+
+.article-reading-layout > * { min-width: 0; }
+.article-table-wrap { max-width: 100%; overflow-x: auto; }
+.article-body-content .article-table { width: 100%; min-width: 600px; display: table; }
+.article-body-content .article-table th { background: var(--sage); }
+.blog-page > .article-cta .article-cta-buttons { grid-column: 2; grid-row: 1 / 3; display: flex; flex-direction: column; align-items: start; gap: 12px; }
+.blog-page > .article-cta .article-cta-buttons a { margin: 0; }
+@media(max-width:760px) {
+ .blog-page > .article-cta .article-cta-buttons { grid-column: 1; grid-row: auto; }
+}
