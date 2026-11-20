@@ -1,0 +1,21 @@
+{
+  "styles": [
+    "/styles.css",
+    "/assets/vendor/lenis.css",
+    "/company.css",
+    "/route-pages.css"
+  ],
+  "scripts": [
+    "/assets/vendor/lenis.min.js",
+    "/site-controls.js?v=20261120-scroll2",
+    "/language-picker.js",
+    "/scroll-reveals.js"
+  ],
+  "bodyClass": "secondary-page",
+  "route": "/terms",
+  "title": "Terms | RoboRingo",
+  "description": "Terms for browsing this website and enquiring about RoboRingo.",
+  "extras": "",
+  "structuredData": [],
+  "html": "<main id=\"main-content\" class=\"section policy-page\"><div class=\"policy-intro\"><a href=\"/\" class=\"route-back\">Back to RoboRingo</a><h1>Clear expectations.<br>Better conversations.</h1><p>Terms for browsing this website and enquiring about RoboRingo.</p></div><div class=\"policy-sections\"><section><h2>Using this website</h2><p>Use this website lawfully and respect the rights of others. Do not attempt to gain unauthorised access, interfere with the website, introduce malicious code, or misuse its forms and contact channels.</p></section><section><h2>Website information</h2><p>Pages describe RoboRingo capabilities and may include illustrative interfaces, examples, and generated imagery. Availability, configuration, pricing, and deployment requirements should be confirmed with our team before you make a purchasing decision.</p></section><section><h2>Product subscriptions</h2><p>A website enquiry does not create a product subscription or service commitment. Any subscription, usage charges, service levels, cancellation rights, and implementation obligations are governed by the agreement accepted for that service. Review the applicable agreement before starting a paid service.</p></section><section><h2>Content and permitted use</h2><p>Website branding, design, and content are protected by applicable intellectual-property rights. You may use the website to evaluate RoboRingo and contact the team. Obtain permission before republishing branded material or using it in a way that suggests an endorsement. Third-party assets remain subject to their respective licences.</p></section><section><h2>External services</h2><p>This website links to the RoboRingo application and third-party services such as demo scheduling and translation. Review the terms presented by those services when you use them.</p></section><section><h2>Questions and applicable agreements</h2><p>Contact <a href=\"mailto:sales@roboringo.com\">sales@roboringo.com</a> with questions about these website terms. These draft website terms require the operating company\u2019s legal review, including confirmation of its legal identity, applicable law, and any limitation or dispute provisions before publication.</p></section></div></main>"
+}

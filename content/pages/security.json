@@ -1,0 +1,21 @@
+{
+  "styles": [
+    "/styles.css",
+    "/assets/vendor/lenis.css",
+    "/company.css",
+    "/route-pages.css"
+  ],
+  "scripts": [
+    "/assets/vendor/lenis.min.js",
+    "/site-controls.js?v=20261120-scroll2",
+    "/language-picker.js",
+    "/scroll-reveals.js"
+  ],
+  "bodyClass": "secondary-page",
+  "route": "/security",
+  "title": "Security | RoboRingo",
+  "description": "Bring your deployment requirements to the RoboRingo team.",
+  "extras": "",
+  "structuredData": [],
+  "html": "<main id=\"main-content\" class=\"section policy-page\"><div class=\"policy-intro\"><a href=\"/\" class=\"route-back\">Back to RoboRingo</a><h1>Security starts<br>with a conversation.</h1><p>Bring your deployment requirements to the RoboRingo team.</p></div><div class=\"policy-sections\"><section><h2>Discuss your requirements</h2><p>Ask us about your required access controls, data residency, retention, encryption, and audit evidence before deploying a production workflow. The controls and obligations for a product deployment should be documented in the applicable service agreement.</p></section><section><h2>Account access</h2><p>The website\u2019s login link opens the RoboRingo application. Keep credentials private and use the authentication and access-control options made available for your deployment. Do not send passwords or API keys through the website contact form.</p></section><section><h2>API keys and integrations</h2><p>Keep production API keys on trusted servers and restrict access to authorised team members. Use separate test credentials when available, and rotate exposed credentials through the appropriate product or support process. Code examples on this website use placeholder credentials.</p></section><section><h2>Calls and sensitive information</h2><p>Plan recording consent, permitted use, and sensitive-data handling before enabling a call workflow. For regulated use cases, request the relevant agreements and evidence from the team before sending customer data into a deployment.</p></section><section><h2>Report a security concern</h2><p>Email <a href=\"mailto:sales@roboringo.com\">sales@roboringo.com</a> with the subject \u201cSecurity report\u201d. Include the affected URL, a description, and safe reproduction steps. Avoid accessing other users\u2019 data or sending credentials and sensitive records. The team can coordinate an appropriate channel if more detail is needed.</p></section><section><h2>Security documentation</h2><p>Certification reports, penetration-test results, contractual service levels, and incident-response commitments must be confirmed directly with the team. This website page is an enquiry guide and does not itself establish a certification or security guarantee.</p></section></div></main>"
+}

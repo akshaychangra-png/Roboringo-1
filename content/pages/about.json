@@ -1,0 +1,56 @@
+{
+  "route": "/about",
+  "title": "About Us | RoboRingo",
+  "description": "RoboRingo is an AI-powered communications company delivering an AI communications platform and enterprise AI voice platform for modern business communication.",
+  "html": "<main id=\"main-content\" class=\"section about-content company-page\">\n  <div class=\"product-page-hero\">\n    <div class=\"product-page-intro\">\n      <h1>AI communications for modern businesses.</h1>\n      <p>RoboRingo brings calls, texts, WhatsApp, and customer context together so teams can manage conversations in one place.</p>\n    </div>\n    <figure class=\"product-page-image\"><img src=\"/assets/images/conversation-context.jpg\" alt=\"Colleagues working together with a laptop and phone\" decoding=\"async\" width=\"1672\" height=\"941\"></figure>\n  </div>\n  <div class=\"company-grid\">\n    <section class=\"company-card\"><h2>Our mission</h2><p>Give teams one AI-native workspace for customer conversations, with the context they need across channels. RoboRingo brings together work that often lives in separate phone systems and CRM tools.</p></section>\n    <section class=\"company-card\"><h2>Built for AI-assisted conversations</h2><p>RoboRingo was designed around both AI agents and human teams. It can route a caller to AI, hand the conversation to a teammate, and connect the interaction to the tools the business already uses.</p></section>\n  </div>\n  <p><a class=\"primary\" href=\"/contact/\">Contact us</a></p>\n  <section class=\"about-credits\"><h2 class=\"product-detail-heading\"><span class=\"product-icon\"><img class=\"icon\" src=\"/assets/icons/phone.png\" alt=\"\" width=\"24\" height=\"24\" aria-hidden=\"true\"></span><span>Asset acknowledgements</span></h2><p>Mona Sans is distributed under the SIL Open Font License. Library notices are included with the assets.</p><p>Industry and module imagery is generated illustration, not customer endorsement. Dashboard image sourced from roboringo.com; the Raj voice recording was supplied by the site owner.</p></section>\n</main>",
+  "styles": [
+    "/styles.css",
+    "/assets/vendor/lenis.css",
+    "/company.css"
+  ],
+  "scripts": [
+    "/assets/vendor/lenis.min.js",
+    "/site-controls.js?v=20261120-scroll2",
+    "/language-picker.js",
+    "/scroll-reveals.js"
+  ],
+  "bodyClass": "secondary-page",
+  "extras": "\n",
+  "structuredData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RoboRingo",
+      "alternateName": "AI Communications Platform",
+      "url": "https://roboringo.com/",
+      "logo": "https://roboringo.com/logo-black.svg"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RoboRingo",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "AI-native communications platform for calls, SMS, WhatsApp, and CRM \u2014 with AI agents that handle every conversation 24/7.",
+      "url": "https://roboringo.com"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://roboringo.com/#website",
+      "url": "https://roboringo.com",
+      "name": "RoboRingo",
+      "publisher": {
+        "@id": "https://roboringo.com/#organization"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RoboRingo",
+      "description": "AI-native communications platform for modern businesses.",
+      "url": "https://roboringo.com",
+      "foundingDate": "2023"
+    }
+  ]
+}

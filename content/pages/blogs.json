@@ -1,0 +1,49 @@
+{
+  "route": "/blogs",
+  "title": "Blog | RoboRingo",
+  "description": "Expert guides on AI receptionists, voice agent platforms, and enterprise call handling. Learn how to evaluate, deploy, and scale AI call automation for your business.",
+  "html": "<main id=\"main-content\" class=\"blog-page\"><section class=\"section\" aria-labelledby=\"blog-listing-heading\"><div class=\"container\"><div class=\"reveal\"><h1 id=\"blog-listing-heading\" class=\"display-card\">RoboRingo insights</h1><p class=\"body-std\">21<!-- --> blogs published</p></div><!--BLOG_GRID--></div></section></main>",
+  "styles": [
+    "/styles.css",
+    "/assets/vendor/lenis.css",
+    "/company.css"
+  ],
+  "scripts": [
+    "/assets/vendor/lenis.min.js",
+    "/site-controls.js?v=20261120-scroll2",
+    "/language-picker.js",
+    "/scroll-reveals.js",
+    "/blog-controls.js?v=20261120-scroll2"
+  ],
+  "bodyClass": "secondary-page",
+  "extras": "\n\n",
+  "structuredData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RoboRingo",
+      "alternateName": "AI Communications Platform",
+      "url": "https://roboringo.com/",
+      "logo": "https://roboringo.com/logo-black.svg"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RoboRingo",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "AI-native communications platform for calls, SMS, WhatsApp, and CRM \u2014 with AI agents that handle every conversation 24/7.",
+      "url": "https://roboringo.com"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://roboringo.com/#website",
+      "url": "https://roboringo.com",
+      "name": "RoboRingo",
+      "publisher": {
+        "@id": "https://roboringo.com/#organization"
+      }
+    }
+  ]
+}

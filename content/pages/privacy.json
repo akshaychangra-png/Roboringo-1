@@ -1,0 +1,21 @@
+{
+  "styles": [
+    "/styles.css",
+    "/assets/vendor/lenis.css",
+    "/company.css",
+    "/route-pages.css"
+  ],
+  "scripts": [
+    "/assets/vendor/lenis.min.js",
+    "/site-controls.js?v=20261120-scroll2",
+    "/language-picker.js",
+    "/scroll-reveals.js"
+  ],
+  "bodyClass": "secondary-page",
+  "route": "/privacy",
+  "title": "Privacy | RoboRingo",
+  "description": "How this website handles information you share and the tools it uses.",
+  "extras": "",
+  "structuredData": [],
+  "html": "<main id=\"main-content\" class=\"section policy-page\"><div class=\"policy-intro\"><a href=\"/\" class=\"route-back\">Back to RoboRingo</a><h1>Your information.<br>Your choices.</h1><p>How this website handles information you share and the tools it uses.</p></div><div class=\"policy-sections\"><section><h2>Information you share</h2><p>When you contact RoboRingo, you may provide your name, email address, phone number, company, and message. We use the details you send to respond to your enquiry and discuss your requirements. Please avoid including passwords, payment details, or sensitive customer information in an enquiry.</p></section><section><h2>Contact forms and email</h2><p>The current website contact form prepares an email draft in your email application. You review and send that message yourself. The website does not display a delivery confirmation for that email. Information you send by email is handled by the email services involved.</p></section><section><h2>Preferences stored on your device</h2><p>This website stores your light or dark theme preference in your browser. You can remove that preference by clearing the website\u2019s browser storage. Language translation tools may also use cookies or browser storage under their own policies.</p></section><section><h2>Third-party tools and links</h2><p>Language translation uses Google Translate. Demo booking links open Calendly, and login links open the RoboRingo application. These services may receive information when you use them and have their own privacy terms. Product application data handling should be reviewed separately from this website notice.</p></section><section><h2>Your requests</h2><p>For questions about information you have shared, or a request to access, correct, or delete it, contact <a href=\"mailto:sales@roboringo.com\">sales@roboringo.com</a>. Tell us enough to identify the relevant enquiry without sending unnecessary sensitive information. Applicable rights and any required retention depend on the circumstances and law.</p></section><section><h2>Scope and updates</h2><p>This notice describes the current marketing website. Before a production release, the operating company should confirm its hosting logs, analytics, email retention, international transfers, and service-provider arrangements and update this notice accordingly.</p></section></div></main>"
+}

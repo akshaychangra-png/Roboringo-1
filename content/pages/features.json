@@ -1,0 +1,70 @@
+{
+  "route": "/features",
+  "title": "AI Voice Agent | AI Voice Agent Platform | RoboRingo",
+  "description": "RoboRingo is an AI voice agent for business with AI voice agents, an enterprise AI voice agent platform, and intelligent voice automation for customer calls 24/7.",
+  "html": "<main id=\"main-content\" class=\"section route-page platform-page\"><section class=\"route-hero\"><div><a class=\"route-back\" href=\"/\">Back to RoboRingo</a><h1>Every conversation.<br>Connected.</h1><p>Your business phone system, messaging channels, and customer intelligence. Connected through one AI-powered platform.</p><div class=\"route-actions\"><a class=\"primary\" href=\"/contact/\">Talk to our team</a><a href=\"tel:+918065590741\">Hear it live</a></div></div><figure><img src=\"/assets/images/conversation-context.jpg\" alt=\"A team reviewing customer conversations together\" width=\"1200\" height=\"800\"></figure></section><nav class=\"platform-jump\" aria-label=\"Platform capabilities\"><a href=\"/features#voice\">Voice &amp; calling</a><a href=\"/features#messaging\">SMS &amp; WhatsApp</a><a href=\"/features#crm\">CRM &amp; integrations</a><a href=\"/features#technical\">Technical capabilities</a></nav><section class=\"route-section route-split\" id=\"voice\"><div><h2>Give every call a clear next step.</h2><p>Route by intent, skill, or department. Connect AI agents and human teams through your phone system or browser.</p><ul><li>Local and toll-free numbers in 100+ countries</li><li>Real-time transcription and sentiment analysis</li><li>Recorded calls with searchable context</li><li>Ring groups, business hours, and custom IVR</li></ul><a href=\"/calling-and-routing.html\">Explore calling and routing \u2192</a></div><img src=\"/assets/images/call-flow-poster.png\" alt=\"RoboRingo call flow\" loading=\"lazy\"></section><section class=\"route-section platform-messaging\" id=\"messaging\"><div><img class=\"platform-section-icon\" src=\"/assets/icons/platform-audio.svg\" width=\"40\" height=\"40\" alt=\"\"><h2>Meet customers on<br>their preferred channel.</h2><p>Send and receive SMS and WhatsApp messages through a unified messaging API. Keep the conversation moving with the customer\u2019s context.</p><ul><li>High-throughput messaging</li><li>Rich media support through WhatsApp</li><li>Two-way conversational messaging</li></ul><a href=\"/contact?subject=Messaging%20integration\">Discuss your messaging setup \u2192</a></div><div class=\"platform-conversation\" aria-label=\"Example customer conversation\"><div class=\"platform-conversation-top\"><img src=\"/assets/icons/platform-crm.svg\" width=\"28\" height=\"28\" alt=\"\"><strong>One conversation. Full context.</strong></div><p class=\"platform-message customer\">Hi, I need help with my recent order.</p><p class=\"platform-message agent\">Of course! Could you provide your order number?</p><p class=\"platform-message customer\">Order #12345</p><div class=\"platform-context\"><img src=\"/assets/icons/check.png\" width=\"20\" height=\"20\" alt=\"\"><span>Conversation linked to the customer record</span></div></div></section><section class=\"route-section route-split\" id=\"crm\"><img src=\"/assets/images/dashboard-original.png\" alt=\"RoboRingo communications dashboard\" loading=\"lazy\"><div><h2>The context your team needs.</h2><p>Keep every call, message, and note in one customer timeline. Use the built-in CRM or sync with Salesforce, HubSpot, and Zendesk.</p><ul><li>A unified 360\u00b0 customer view</li><li>Automated activity logging</li><li>One-click external integrations</li></ul><a href=\"/integrations-and-data.html\">Explore integrations \u2192</a></div></section><section class=\"route-section platform-technical\" id=\"technical\"><div class=\"platform-section-heading\"><h2>Everything behind<br>a better conversation.</h2><p>The capabilities to connect your channels, support your team, and build the workflow your business needs.</p></div><div class=\"platform-capability-grid\"><a class=\"platform-capability\" href=\"/calling-and-routing.html\"><img src=\"/assets/icons/phone.png\" width=\"30\" height=\"30\" alt=\"\"><h3>Local numbers</h3><p>Acquire local numbers in 100+ countries.</p><span class=\"platform-capability-link\">Explore <span aria-hidden=\"true\">\u2192</span></span></a><a class=\"platform-capability\" href=\"/calling-and-routing.html\"><img src=\"/assets/icons/phone.png\" width=\"30\" height=\"30\" alt=\"\"><h3>Toll-free numbers</h3><p>Give callers a familiar way to reach your business.</p><span class=\"platform-capability-link\">Explore <span aria-hidden=\"true\">\u2192</span></span></a><a class=\"platform-capability\" href=\"/calling-and-routing.html\"><img src=\"/assets/icons/microphone.png\" width=\"30\" height=\"30\" alt=\"\"><h3>Call recording</h3><p>Record calls and keep them securely stored.</p><span class=\"platform-capability-link\">Explore <span aria-hidden=\"true\">\u2192</span></span></a><a class=\"platform-capability\" href=\"/calling-and-routing.html\"><img src=\"/assets/icons/platform-audio.svg\" width=\"30\" height=\"30\" alt=\"\"><h3>Transcripts</h3><p>Turn speech into searchable conversation records.</p><span class=\"platform-capability-link\">Explore <span aria-hidden=\"true\">\u2192</span></span></a><a class=\"platform-capability\" href=\"/developers\"><img src=\"/assets/icons/platform-sync.svg\" width=\"30\" height=\"30\" alt=\"\"><h3>Webhooks</h3><p>Send real-time event notifications to your servers.</p><span class=\"platform-capability-link\">Explore <span aria-hidden=\"true\">\u2192</span></span></a><a class=\"platform-capability\" href=\"/pricing\"><img src=\"/assets/icons/platform-crm.svg\" width=\"30\" height=\"30\" alt=\"\"><h3>Flexible billing</h3><p>Plan usage with pay-as-you-go, granular billing.</p><span class=\"platform-capability-link\">Explore <span aria-hidden=\"true\">\u2192</span></span></a><a class=\"platform-capability\" href=\"/calling-and-routing.html\"><img src=\"/assets/icons/phone.png\" width=\"30\" height=\"30\" alt=\"\"><h3>Custom IVR</h3><p>Build interactive menus around your call workflows.</p><span class=\"platform-capability-link\">Explore <span aria-hidden=\"true\">\u2192</span></span></a><a class=\"platform-capability\" href=\"/calling-and-routing.html\"><img src=\"/assets/icons/platform-crm.svg\" width=\"30\" height=\"30\" alt=\"\"><h3>Ring groups</h3><p>Route calls to multiple teammates simultaneously.</p><span class=\"platform-capability-link\">Explore <span aria-hidden=\"true\">\u2192</span></span></a><a class=\"platform-capability\" href=\"/contact?subject=Enterprise%20security\"><img src=\"/assets/icons/shield.png\" width=\"30\" height=\"30\" alt=\"\"><h3>Enterprise security</h3><p>Discuss encryption and compliance requirements for your deployment.</p><span class=\"platform-capability-link\">Explore <span aria-hidden=\"true\">\u2192</span></span></a><a class=\"platform-capability\" href=\"/#dashboard\"><img src=\"/assets/icons/chart.png\" width=\"30\" height=\"30\" alt=\"\"><h3>Analytics</h3><p>Review detailed reports and dashboard insights.</p><span class=\"platform-capability-link\">Explore <span aria-hidden=\"true\">\u2192</span></span></a><a class=\"platform-capability\" href=\"/industry-and-rollout.html\"><img src=\"/assets/icons/platform-globe.svg\" width=\"30\" height=\"30\" alt=\"\"><h3>Global coverage</h3><p>Connect teams through carrier-grade infrastructure.</p><span class=\"platform-capability-link\">Explore <span aria-hidden=\"true\">\u2192</span></span></a><a class=\"platform-capability\" href=\"/developers\"><img src=\"/assets/icons/platform-api.svg\" width=\"30\" height=\"30\" alt=\"\"><h3>APIs &amp; SDKs</h3><p>Build integrations with developer tools and APIs.</p><span class=\"platform-capability-link\">Explore <span aria-hidden=\"true\">\u2192</span></span></a></div></section><section class=\"route-band\"><div><h2>Let\u2019s make your next conversation better.</h2><p>Tell us what your team needs. We\u2019ll help you find the right setup.</p></div><a class=\"primary\" href=\"/contact/\">Let\u2019s talk</a></section></main>",
+  "styles": [
+    "/styles.css",
+    "/assets/vendor/lenis.css",
+    "/company.css",
+    "/route-pages.css"
+  ],
+  "scripts": [
+    "/assets/vendor/lenis.min.js",
+    "/site-controls.js?v=20261120-scroll2",
+    "/language-picker.js",
+    "/scroll-reveals.js"
+  ],
+  "bodyClass": "secondary-page",
+  "extras": "",
+  "structuredData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RoboRingo",
+      "alternateName": "AI Communications Platform",
+      "url": "https://roboringo.com/",
+      "logo": "https://roboringo.com/logo-black.svg"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RoboRingo",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "AI-native communications platform for calls, SMS, WhatsApp, and CRM \u2014 with AI agents that handle every conversation 24/7.",
+      "url": "https://roboringo.com"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://roboringo.com/#website",
+      "url": "https://roboringo.com",
+      "name": "RoboRingo",
+      "publisher": {
+        "@id": "https://roboringo.com/#organization"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Enterprise-grade VoIP and Call Routing"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Global SMS & WhatsApp integration"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Built-in CRM & Integrations"
+        }
+      ]
+    }
+  ]
+}

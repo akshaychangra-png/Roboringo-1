@@ -1,0 +1,49 @@
+{
+  "route": "/contact",
+  "title": "Contact Us | RoboRingo",
+  "description": "Get in touch with the RoboRingo team to learn how our AI receptionist and conversational phone agents can scale your call coverage.",
+  "html": "<main id=\"main-content\" class=\"section company-page contact-page\">\n  <div class=\"company-grid company-contact\">\n    <div class=\"product-page-intro\">\n      <h1>Let\u2019s talk about your call coverage.</h1>\n      <p>Ask about the RoboRingo AI receptionist, discuss your team\u2019s needs, or arrange a custom demo.</p>\n      <section class=\"company-card contact-details\">\n        <img class=\"contact-symbol\" src=\"/assets/icons/platform-audio.svg\" alt=\"\" width=\"56\" height=\"42\"><h2>Start a conversation</h2>\n        <p><a href=\"mailto:sales@roboringo.com\">sales@roboringo.com</a></p>\n        <div class=\"contact-divider\"></div><h2>Find us in Gurugram</h2>\n        <address>RoboRingo Division<br>Plot 28\u201329, Electronic City, Phase IV, Udyog Vihar<br>Sector 18, Gurugram, Haryana 122001</address><a class=\"contact-map\" href=\"https://www.google.com/maps/search/?api=1&amp;query=Plot+28-29+Electronic+City+Udyog+Vihar+Gurugram\" target=\"_blank\" rel=\"noopener\">Open in Maps \u2197</a>\n      </section>\n    </div>\n    <form class=\"company-card contact-form\">\n      <h2>What can we help you with?</h2>\n      <p>We\u2019ll open an email draft with your details so you can review and send it.</p>\n      <div class=\"contact-fields\"><label class=\"contact-wide\">I\u2019m interested in<select name=\"interest\"><option>AI calling for my business</option><option>Personal AI assistant</option><option>Training and security</option><option>Integrations and rollout</option><option>Something else</option></select></label>\n        <label>First name<input name=\"first\" autocomplete=\"given-name\" required></label>\n        <label>Last name<input name=\"last\" autocomplete=\"family-name\" required></label>\n        <label>Work email<input name=\"email\" type=\"email\" autocomplete=\"email\" required></label>\n        <label>Phone number<input name=\"phone\" type=\"tel\" autocomplete=\"tel\"></label>\n        <label class=\"contact-wide\">Company name<input name=\"company\" autocomplete=\"organization\"></label>\n        <label class=\"contact-wide\">How can we help?<textarea name=\"message\" rows=\"5\" required></textarea></label>\n      </div>\n      <button class=\"primary\" type=\"submit\">Open email draft</button>\n    </form>\n  </div>\n</main>",
+  "styles": [
+    "/styles.css",
+    "/assets/vendor/lenis.css",
+    "/company.css"
+  ],
+  "scripts": [
+    "/assets/vendor/lenis.min.js",
+    "/site-controls.js?v=20261120-scroll2",
+    "/language-picker.js",
+    "/scroll-reveals.js",
+    "/contact.js"
+  ],
+  "bodyClass": "secondary-page",
+  "extras": "\n\n",
+  "structuredData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RoboRingo",
+      "alternateName": "AI Communications Platform",
+      "url": "https://roboringo.com/",
+      "logo": "https://roboringo.com/logo-black.svg"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RoboRingo",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "AI-native communications platform for calls, SMS, WhatsApp, and CRM \u2014 with AI agents that handle every conversation 24/7.",
+      "url": "https://roboringo.com"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://roboringo.com/#website",
+      "url": "https://roboringo.com",
+      "name": "RoboRingo",
+      "publisher": {
+        "@id": "https://roboringo.com/#organization"
+      }
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "route": "/ai-agent",
+  "title": "AI Voice Agent for Business | 24/7 AI Call Handling | RoboRingo",
+  "description": "RoboRingo\u2019s conversational AI phone agent provides 24/7 AI call handling, AI call answering, and enterprise AI receptionist solutions for modern businesses.",
+  "html": "<main id=\"main-content\" class=\"section route-page\"><section class=\"route-hero\"><div><a class=\"route-back\" href=\"/\">Back to RoboRingo</a><h1>A natural hello.<br>A capable AI agent.</h1><p>Answer calls, handle messages, and bring in a teammate with the context they need.</p><div class=\"route-actions\"><a class=\"primary\" href=\"/contact/\">Talk to our team</a><a href=\"tel:+918065590741\">Hear it live</a></div></div><figure><img src=\"/assets/images/industries-business.jpg\" alt=\"Professionals using AI-assisted communication\" width=\"1200\" height=\"800\"></figure></section><section class=\"route-live\" id=\"ai-demo\"><div><img src=\"/assets/icons/phone.png\" width=\"32\" height=\"32\" alt=\"\"><h2>Give RoboRingo a ring.</h2><p>Hear the voice agent handle a real conversation.</p></div><a href=\"tel:+918065590741\">+91 80 6559 0741</a></section><section class=\"route-section\"><h2>Ready for real conversations.</h2><div class=\"route-grid\"><article class=\"route-card\"><img src=\"/assets/icons/platform-audio.svg\" width=\"32\" height=\"32\" alt=\"\"><h3>Natural turn-taking</h3><p>The agent listens when a caller interrupts and continues with the conversation.</p></article><article class=\"route-card\"><img src=\"/assets/icons/microphone.png\" width=\"32\" height=\"32\" alt=\"\"><h3>Multilingual support</h3><p>Speak with callers in their preferred language.</p></article><article class=\"route-card\"><img src=\"/assets/icons/phone.png\" width=\"32\" height=\"32\" alt=\"\"><h3>Human handoff</h3><p>Bring the right teammate in with a transcript and caller context.</p></article><article class=\"route-card\"><img src=\"/assets/icons/platform-audio.svg\" width=\"32\" height=\"32\" alt=\"\"><h3>Voice profiles</h3><p>Choose a voice that fits your business.</p></article><article class=\"route-card\"><img src=\"/assets/icons/platform-crm.svg\" width=\"32\" height=\"32\" alt=\"\"><h3>Tone &amp; sentiment</h3><p>Surface frustration and urgency in the conversation.</p></article><article class=\"route-card\"><img src=\"/assets/icons/platform-mcp.svg\" width=\"32\" height=\"32\" alt=\"\"><h3>Connected actions</h3><p>Use MCP and integrations to look up information and trigger workflows.</p></article></div></section><section class=\"route-section route-split\"><img src=\"/assets/images/assistant-summary.webp\" alt=\"A professional reviewing conversation details\" loading=\"lazy\"><div><h2>The conversation keeps its context.</h2><p>Connect voice, SMS, and WhatsApp to a shared customer timeline. Let the agent retrieve knowledge, update CRM records, and trigger the next step during a conversation.</p><ul><li>Knowledge base retrieval</li><li>CRM updates and workflow triggers</li><li>Call scoring, sentiment, and performance trends</li></ul><a href=\"/integrations-and-data.html\">See how integrations work \u2192</a></div></section><section class=\"route-band\"><div><h2>Let\u2019s make your next conversation better.</h2><p>Tell us what your team needs. We\u2019ll help you find the right setup.</p></div><a class=\"primary\" href=\"/contact/\">Let\u2019s talk</a></section></main>",
+  "styles": [
+    "/styles.css",
+    "/assets/vendor/lenis.css",
+    "/company.css",
+    "/route-pages.css"
+  ],
+  "scripts": [
+    "/assets/vendor/lenis.min.js",
+    "/site-controls.js?v=20261120-scroll2",
+    "/language-picker.js",
+    "/scroll-reveals.js"
+  ],
+  "bodyClass": "secondary-page",
+  "extras": "",
+  "structuredData": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RoboRingo",
+      "alternateName": "AI Communications Platform",
+      "url": "https://roboringo.com/",
+      "logo": "https://roboringo.com/logo-black.svg"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RoboRingo",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "AI-native communications platform for calls, SMS, WhatsApp, and CRM \u2014 with AI agents that handle every conversation 24/7.",
+      "url": "https://roboringo.com"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://roboringo.com/#website",
+      "url": "https://roboringo.com",
+      "name": "RoboRingo",
+      "publisher": {
+        "@id": "https://roboringo.com/#organization"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "RoboRingo AI Voice Agent",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "AI voice agents that handle autonomous business communications across voice, SMS, and WhatsApp with Model Context Protocol support, sub-500ms latency, and 50+ language support.",
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "49",
+        "highPrice": "299",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Sub-500ms voice response latency",
+        "Interruption handling with natural turn-taking",
+        "Emotion and tone detection",
+        "Custom voice profiles with 30+ TTS voices",
+        "50+ language support with automatic detection",
+        "Smart human escalation with full context",
+        "Omnichannel memory across voice, SMS, and WhatsApp",
+        "MCP integration for CRM, knowledge base, and workflow automation",
+        "Real-time call analytics and sentiment scoring",
+        "SOC 2 Type II and GDPR compliance"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an AI Voice Agent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An AI Voice Agent is an intelligent virtual agent that can handle phone calls autonomously using natural language processing. Unlike traditional IVR systems, it understands free-form speech, maintains context across conversations, and can take actions like updating CRM records or booking meetings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast does the RoboRingo AI agent respond?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RoboRingo AI agents respond in under 500 milliseconds, creating a natural conversational experience that feels like talking to a real person."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the AI agent handle multiple languages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, RoboRingo AI agents support 50+ languages with automatic language detection. They can switch languages mid-conversation based on the caller's preference."
+          }
+        }
+      ]
+    }
+  ]
+}
