@@ -55,6 +55,7 @@
   }
 
   async function roll() {
+    window.dispatchEvent(new Event('hero-phrase-roll'));
     const next = (current + 1) % phrases.length;
     const outgoing = phrases[current];
     const incoming = phrases[next];

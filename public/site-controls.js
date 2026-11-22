@@ -129,6 +129,7 @@
 (() => {
   const root = document.documentElement;
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const nativeMobileScroll = matchMedia('(max-width: 760px)');
   let lenis;
   function syncScrollLock() {
     if (!lenis) return;
@@ -137,7 +138,7 @@
   }
 
   function updateMotion() {
-    if (reducedMotion.matches) {
+    if (reducedMotion.matches || nativeMobileScroll.matches) {
       lenis?.destroy();
       lenis = undefined;
     } else if (!lenis && typeof window.Lenis === 'function') {
@@ -162,6 +163,7 @@
     attributes: true,
     attributeFilter: ['style'],
   });
+  nativeMobileScroll.addEventListener('change', updateMotion);
   reducedMotion.addEventListener('change', updateMotion);
   updateMotion();
 })();

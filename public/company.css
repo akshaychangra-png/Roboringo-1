@@ -544,3 +544,11 @@ html[data-theme="dark"] .featured-controls button:last-child:not(:disabled) img 
 @media(max-width:760px) {
  .blog-page > .article-cta .article-cta-buttons { grid-column: 1; grid-row: auto; }
 }
+
+@media(max-width:760px) {
+  .blog-featured { touch-action: pan-x pan-y; overscroll-behavior: auto; -webkit-overflow-scrolling: touch; }
+  .blog-featured .blog-card,.blog-featured a { touch-action: pan-x pan-y; }
+}
+@media(max-width:760px) {
+ .blog-featured,.blog-featured .blog-card,.blog-featured a { touch-action: pan-x pan-y pinch-zoom; }
+}
