@@ -10,14 +10,6 @@ const title=document.createElement('h3');title.textContent=select.value;stage.ap
 select.onchange=()=>{revealed=false;render();};render();function close(){overlay.remove();document.body.style.overflow=oldOverflow;heroAudio.pause();document.removeEventListener('keydown',key);opener.focus();}overlay.querySelector('.close').onclick=close;overlay.onclick=e=>{if(e.target===overlay)close();};function key(e){if(e.key==='Escape')close();if(e.key==='Tab'){const els=[...overlay.querySelectorAll('button,select,a')],first=els[0],last=els[els.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}}document.addEventListener('keydown',key);overlay.querySelector('.close').focus();}
 document.querySelectorAll('[data-demo]').forEach(button=>button.addEventListener('click',()=>openDemo(Number(button.dataset.demo))));
 
-// Email preparation is local; the visitor reviews and sends in their email app.
-document.getElementById('contact-form').addEventListener('submit',event=>{
- event.preventDefault();const form=event.currentTarget;if(!form.reportValidity())return;
- const data=new FormData(form),subject='RoboRingo enquiry: '+data.get('module');
- const body='Name: '+data.get('name')+'\nWork email: '+data.get('email')+'\nInterested in: '+data.get('module')+'\n\n'+data.get('message');
- const href='mailto:sales@roboringo.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
- const status=document.getElementById('contact-status');status.replaceChildren();const message=document.createElement('p');message.textContent='Your enquiry is ready. Open your email draft, review it, then send it from your email app.';const link=document.createElement('a');link.href=href;link.textContent='Open email draft';status.append(message,link);link.focus();
-});
 // Alternating industry reels pause on request, when offscreen, or in reduced motion.
 const reels=document.querySelector('.industry-reels'),reelControl=document.querySelector('.reel-control');
 let userPaused=false;

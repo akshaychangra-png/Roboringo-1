@@ -1256,3 +1256,8 @@ html[data-theme="dark"] .hero-country-cycle .hero-live-call {
   box-shadow: 0 0 0 2px #487b27, 0 2px 5px #173e3026;
 }
 .hero-country-cycle .demo-flag-stack img { transition: box-shadow .75s ease-in-out; }
+
+.form-honeypot { display: none !important; }
+[data-form-status]:not(:empty) { margin-top: 16px; font-size: 14px; line-height: 1.5; color: var(--ink); }
+[data-form-status][role="alert"] { color: #b24332; }
+html[data-theme="dark"] [data-form-status][role="alert"] { color: #ffb6a6; }

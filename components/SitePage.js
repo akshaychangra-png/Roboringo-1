@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
 import parse from 'html-react-parser';
+import { connectEnquiryForms } from '../lib/form-submit-client';
 
-export default function SitePage({ page, shell }) {
+export default function SitePage({ page, shell, formSubmitEndpoint }) {
   useEffect(() => {
     document.body.className = page.bodyClass;
+    const disconnectForms = connectEnquiryForms(formSubmitEndpoint);
     let cancelled = false;
     async function loadScripts() {
       for (const source of page.scripts) {
@@ -19,8 +21,8 @@ export default function SitePage({ page, shell }) {
       }
     }
     loadScripts();
-    return () => { cancelled = true; };
-  }, [page]);
+    return () => { cancelled = true; disconnectForms(); };
+  }, [page, formSubmitEndpoint]);
   const normalize = value => value.replace(/\/$/, '') || '/';
   const header = shell.header.replace(/<a([^>]*?)href="([^"]+)"([^>]*)>/g, (tag, before, href, after) =>
     normalize(href) === normalize(page.route)
