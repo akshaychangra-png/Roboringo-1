@@ -1,7 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-const source = await fs.readFile(new URL('../lib/form-submit-client.js', import.meta.url), 'utf8');
+let source = await fs.readFile(new URL('../lib/form-submit-client.js', import.meta.url), 'utf8');
+const navigationSource = await fs.readFile(new URL('../lib/enquiry-navigation.js', import.meta.url), 'utf8');
+source = source.replace("'./enquiry-navigation'", JSON.stringify('data:text/javascript;base64,' + Buffer.from(navigationSource).toString('base64')));
 const { sendEnquiry, connectEnquiryForms } = await import('data:text/javascript;base64,' + Buffer.from(source).toString('base64'));
 
 test('AJAX sends all details with JSON headers and checks provider acknowledgement', async () => {
@@ -58,7 +60,7 @@ test('shared form handler prevents duplicates, reports failures, preserves input
     reset() { resetCount++; },
   };
   try {
-    globalThis.document = { querySelectorAll: () => [form] };
+    globalThis.document = { cookie: '', querySelectorAll: () => [form] };
     globalThis.FormData = class { constructor(form) { this.fields = form.fields; } *[Symbol.iterator]() { yield* Object.entries(this.fields); } };
     globalThis.location = { origin: 'https://example.com', pathname: '/contact', search: '?subject=Personal%20Plus' };
     let payload;

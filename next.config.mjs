@@ -1,5 +1,6 @@
 export default {
   reactStrictMode: false,
+  trailingSlash: false,
   async redirects() {
     return [
       { source: '/index.html', destination: '/', permanent: true },

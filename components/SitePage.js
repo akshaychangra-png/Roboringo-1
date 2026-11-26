@@ -1,11 +1,13 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
 import parse from 'html-react-parser';
+import { connectEnquiryNavigation } from '../lib/enquiry-navigation';
 import { connectEnquiryForms } from '../lib/form-submit-client';
 
 export default function SitePage({ page, shell, formSubmitEndpoint }) {
   useEffect(() => {
     document.body.className = page.bodyClass;
+    const disconnectNavigation = connectEnquiryNavigation();
     const disconnectForms = connectEnquiryForms(formSubmitEndpoint);
     let cancelled = false;
     async function loadScripts() {
@@ -21,7 +23,7 @@ export default function SitePage({ page, shell, formSubmitEndpoint }) {
       }
     }
     loadScripts();
-    return () => { cancelled = true; disconnectForms(); };
+    return () => { cancelled = true; disconnectForms(); disconnectNavigation(); };
   }, [page, formSubmitEndpoint]);
   const normalize = value => value.replace(/\/$/, '') || '/';
   const header = shell.header.replace(/<a([^>]*?)href="([^"]+)"([^>]*)>/g, (tag, before, href, after) =>
